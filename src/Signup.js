@@ -1,5 +1,3 @@
-// import { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import logo from './images/Netflix_Logo.png'
 
 function Signup({onSignIn}){
@@ -12,12 +10,12 @@ function Signup({onSignIn}){
         <img
           src={logo}
           alt="Netflix logo"
-          className="w-56 my-2 mx-5 saturate-200"
+          className="w-36 sm:w-56 my-2 mx-5 saturate-200"
         />
       </nav>
-      <div className="flex justify-center items-center h-[85vh] text-white">
+      <div className="flex justify-center items-center md:h-[85vh] text-white">
         <form
-          className="bg-black rounded-lg bg-opacity-70 flex flex-col px-16 py-14 h-[85vh] w-[30vw]"
+          className="bg-black rounded-lg bg-opacity-70 flex flex-col px-8 sm:px-16 py-6 sm:py-14 h-full md:h-[85vh] md:w-[30vw]"
         >
           <h1 className="font-bold text-4xl mb-9">Sign In</h1>
           <input
@@ -60,9 +58,9 @@ function Signup({onSignIn}){
         </form>
       </div>
       <div
-        className="flex justify-center items-center text-white bg-black bg-opacity-70 h-[25%] mt-24"
+        className="flex w-full justify-center items-center text-white bg-black bg-opacity-70 h-[20%] sm:h-[25%] fixed bottom-0"
       >
-        <div className="w-[60vw] flex flex-col space-y-14">
+        <div className="px-8 md:w-[60vw] flex flex-col space-y-6 sm:space-y-14">
           <div>Questions? Call 000-800-919-1694</div>
           <ul className="flex flex-wrap justify-between">
             <li>FAQ</li>
